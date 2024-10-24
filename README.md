@@ -1,9 +1,9 @@
 
-![ReqTrace Logo](path/to/your/brand-icon.png) <!-- Replace with the actual path to your brand icon -->
+![ReqTrace Logo](path/to/your/brand-icon.png)
 
 **ReqTrace** is a lightweight Python library designed to profile and visualize HTTP requests. It captures request details, such as response time, and presents the data in a user-friendly format, helping developers monitor, analyze, and optimize their application's HTTP interactions.
 
-![Hero Image](path/to/your/hero-image.png) <!-- Replace with the actual path to your hero image -->
+![Hero Image](https://github.com/Joshdammy22/ReqTrace/blob/master/bg.png) 
 
 
 ## Features
