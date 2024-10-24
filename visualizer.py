@@ -2,10 +2,8 @@ from rich.console import Console
 from rich.table import Table
 
 class Visualizer:
-    def __init__(self):
-        self.console = Console()
-
     def display_logs(self, logs):
+        console = Console()
         table = Table(title="HTTP Request Profiling Results")
 
         table.add_column("Method", justify="center")
@@ -13,6 +11,6 @@ class Visualizer:
         table.add_column("Response Time (s)", justify="center")
 
         for log in logs:
-            table.add_row(log['method'], log['url'], f"{log['response_time']:.4f}")
+            table.add_row(log["method"], log["url"], f"{log['response_time']:.2f}")
 
-        self.console.print(table)
+        console.print(table)

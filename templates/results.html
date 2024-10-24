@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}HTTP Request Profiling Results{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4">HTTP Request Profiling Results</h1>
+    
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th><i class="fas fa-network-wired icon"></i> Method</th>
+                    <th><i class="fas fa-link icon"></i> URL</th>
+                    <th><i class="fas fa-code icon"></i> Status Code</th>
+                    <th><i class="fas fa-stopwatch icon"></i> Response Time (s)</th>
+                    <th><i class="fas fa-database icon"></i> Response Size (Bytes)</th>
+                    <th><i class="fas fa-file-alt icon"></i> Content Type</th>
+                    <th><i class="fas fa-calendar-alt icon"></i> Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr>
+                    <td>{{ result[0] }}</td>
+                    <td class="text-truncate" style="max-width: 250px;">{{ result[1] }}</td>
+                    <td>{{ result[2] }}</td>
+                    <td>{{ result[3] }}</td>
+                    <td>{{ result[4] }}</td>
+                    <td>{{ result[5] }}</td>
+                    <td>{{ result[7] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

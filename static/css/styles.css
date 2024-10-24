@@ -1,0 +1,102 @@
+
+/* Navbar styling */
+.navbar {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Automatically align nav items to the right */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 1rem; /* Adds space between nav items */
+}
+
+.navbar-nav .nav-link {
+    color: #007bff; /* Default link color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    padding: 0.5rem 1rem; /* Padding for clickable area */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3; /* Change color on hover */
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+.navbar-nav .nav-link.active {
+    color: #0056b3; /* Active link color */
+    font-weight: bold; /* Bold for active link */
+}
+
+.navbar-nav .nav-link.disabled {
+    color: #6c757d; /* Disabled link color */
+}
+
+
+/* Brand icon and name styling */
+.brand-icon {
+    width: 30px; /* Consistent icon size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Custom margin for brand name */
+.brand-name {
+    font-size: 1.5rem; /* Increase font size for brand name */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        margin-top: 1rem; /* Adds margin on mobile view */
+    }
+}
+
+
+/* Content Container */
+.content-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Table Styling */
+.table {
+    font-size: 0.9rem;
+}
+
+.table thead {
+    background-color: #e9ecef;
+}
+
+h1 {
+    font-weight: 500;
+    color: #333; 
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #6c757d; 
+    border-color: #6c757d;
+}
+
+.btn-primary:hover {
+    background-color: #5a6268; 
+}
+
+/* Responsive Table */
+.responsive-table {
+    overflow-x: auto; 
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 15px; 
+    }
+    h1 {
+        font-size: 1.5rem; 
+    }
+}
